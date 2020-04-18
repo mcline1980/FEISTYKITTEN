@@ -1,33 +1,8 @@
-# DEFAULTS
-secret_number = 19
-character_try = 0
-character_life = 5
-character_max_health = 10
-secret_number1 = 0
+from Function_UserCreator import Player
+from Function_UserCreator import user_create
 
-
-# Define Player Attributes
-class Player:
-    def __init__(character, name, char_try, char_life, char_max_health, char_sn):
-        character.name = name
-        character.char_try = character_try
-        character.char_life = character_life
-        character.char_max_health = character_max_health
-        character.char_sn = secret_number1
-
-
-
-
-# Set Player Attributes to Default (TEMPORARY)
-Player.char_try = character_try
-Player.char_life = character_life
-Player.char_max_health = character_max_health
-Player.char_sn = secret_number1
-
-# Character Creation
-Player.name = input("Please enter your character name: ")
-print(Player.name)
-print(f"You have {Player.char_life} health.")
+secret_number = 19  # Temporary placeholder before random number generator is created
+user_create()
 
 
 # Define Player Input Function with error handling
